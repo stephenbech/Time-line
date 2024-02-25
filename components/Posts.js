@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { db } from '../firebase';
-import Post from './post';
+import Post from './Post';
 import { collection, getDoc, getDocs, query, serverTimestamp } from 'firebase/firestore';
 function Posts({posts}) {
       const [documents, setDocuments] = useState([]);
