@@ -28,6 +28,7 @@ function Header() {
                 width={40} 
                 height={40} 
                 layout="fixed" 
+                alt='nill'
               /> 
 
               <div className='hidden md:inline-flex ml-2 items-center rounded-full bg-gray-100 p-2'>
@@ -59,6 +60,7 @@ function Header() {
             width={40} 
             height={40} 
             layout="fixed" 
+            alt='fill'
           /> 
 
           <p className='hidden lg:inline-flex text-sm whitespace-nowrap font-semibold pr-3'>  

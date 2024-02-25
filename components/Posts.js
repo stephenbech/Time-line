@@ -4,13 +4,13 @@ import Post from './post';
 import { collection, getDoc, getDocs, query, serverTimestamp } from 'firebase/firestore';
 function Posts({posts}) {
       const [documents, setDocuments] = useState([]);
-      console.log(posts)
+      // console.log(posts)
       const querySnapshot = collection(db, "posts");
         useEffect(() => {
         const getDocuments = async() =>{
             const data = await getDocs(querySnapshot);
             setDocuments(data.docs.map((doc) => (  
-                  console.log(doc.id),
+                  // console.log(doc.id),
                   {
                         ...doc.data(), 
                         id: doc.id, 
@@ -26,7 +26,7 @@ function Posts({posts}) {
             
           getDocuments();
         }
-      }, [])
+      }, [querySnapshot])
       
 
 
@@ -50,8 +50,8 @@ function Posts({posts}) {
 //       ))
 //       :
       posts.map((post)=>(
-            <Post
-                  key={post.id}
+           <div key={post.id}>
+             <Post
                   name={post.name}
                   message={post.message}
                   email={post.email}
@@ -59,6 +59,7 @@ function Posts({posts}) {
                   image={post.image}
                   postImage={post.postImage}
             />
+           </div>
       ))
 
     }

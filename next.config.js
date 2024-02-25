@@ -9,7 +9,10 @@ const nextConfig = {
       "firebasestorage.googleapis.com",
       "https://disneyplus-clone-2eb8a.firebaseapp.com/__/auth/handler",
     ], 
+    unoptimized: true
   },
+
+  output: "standalone",
 }
 
 

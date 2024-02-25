@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "disneyplus-clone-2eb8a"
-  }
+    "default": "disneyplus-clone-2eb8a",
+    "fb-clone": "disneyplus-clone-2eb8a"
+  },
+  "targets": {},
+  "etags": {}
 }

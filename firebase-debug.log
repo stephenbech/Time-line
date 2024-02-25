@@ -1,0 +1,47 @@
+[debug] [2024-02-25T20:13:45.091Z] ----------------------------------------------------------------------
+[debug] [2024-02-25T20:13:45.096Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Big Man Steven\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-02-25T20:13:45.096Z] CLI Version:   13.3.1
+[debug] [2024-02-25T20:13:45.097Z] Platform:      win32
+[debug] [2024-02-25T20:13:45.097Z] Node Version:  v20.9.0
+[debug] [2024-02-25T20:13:45.097Z] Time:          Sun Feb 25 2024 21:13:45 GMT+0100 (West Africa Standard Time)
+[debug] [2024-02-25T20:13:45.097Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-25T20:13:45.243Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-25T20:13:45.244Z] > authorizing via signed-in user (stephenbech19@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Big Man Steven\next-js-apps\fbclone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-02-25T20:14:15.169Z] Using project from CLI flag: disneyplus-clone-2eb8a
+[debug] [2024-02-25T20:14:15.172Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-2eb8a [none]
+[debug] [2024-02-25T20:14:16.039Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-2eb8a 200
+[debug] [2024-02-25T20:14:16.040Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-2eb8a {"projectId":"disneyplus-clone-2eb8a","projectNumber":"336199444576","displayName":"disneyplus-clone","name":"projects/disneyplus-clone-2eb8a","resources":{"hostingSite":"disneyplus-clone-2eb8a","storageBucket":"disneyplus-clone-2eb8a.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_b23bf057-fab0-4189-8ca2-51d1860d3db0"}
+[info] i  Using project disneyplus-clone-2eb8a (disneyplus-clone) 
+[info] 
+=== Hosting Setup
+[debug] [2024-02-25T20:14:16.050Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-2eb8a [none]
+[debug] [2024-02-25T20:14:16.349Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-2eb8a 200
+[debug] [2024-02-25T20:14:16.350Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-2eb8a {"projectId":"disneyplus-clone-2eb8a","projectNumber":"336199444576","displayName":"disneyplus-clone","name":"projects/disneyplus-clone-2eb8a","resources":{"hostingSite":"disneyplus-clone-2eb8a","storageBucket":"disneyplus-clone-2eb8a.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_b23bf057-fab0-4189-8ca2-51d1860d3db0"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

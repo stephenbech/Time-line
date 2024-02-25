@@ -9,6 +9,7 @@ function Login() {
             width={400} 
             height={300}
             objectFit="contain"
+            alt='sad'
        />
        <h1 onClick={() => signIn()} className='p-5 bg-blue-500 rounded-full text-white text-center cursor-pointer' >Login with Facebook</h1>
     </div>

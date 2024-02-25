@@ -70,6 +70,7 @@ function InputBox() {
                   width={40} 
                   height={40} 
                   layout="fixed" 
+                  alt='tired'
            />
             <form className='flex flex-1' >
                   <input 
@@ -85,7 +86,13 @@ function InputBox() {
 
             {imageToPost && (
                   <div className="flex flex-col filter hover:brightness-110 transition duration-150 transform hover:scale105 cursor-pointer " >
-                        <img className='h-10 object-contain' src={imageToPost} alt="test" />
+                        <Image 
+                              className='h-10 object-contain'  
+                              src={imageToPost} 
+                              alt="test"
+                              width={40}
+                              height={40}
+                        />
                         <p onClick={removeImage} className='text-xs text-red-500 text-center  ' >Remove</p>
                   </div>
             )}
