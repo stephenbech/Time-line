@@ -10,7 +10,7 @@ import { collection, getDoc, getDocs } from 'firebase/firestore';
 import React, { useState, useEffect } from 'react';
 import { data } from 'autoprefixer';
 
-export default function Home({posts}) {
+const Home = ({ posts }) => {
   const { data: session } = useSession()
   if (!session) return <Login/>;
   console.log(posts)
@@ -32,8 +32,10 @@ export default function Home({posts}) {
     </div>
   )
 }
+export default Home
 
-export async function getServerSideProps(context) {
+
+export async function getStaticProps(context) {
 
   // Get the user
   const session = await getSession(context)

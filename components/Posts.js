@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { db } from '../firebase';
-import Post from './Post';
+import Post from './post';
 import { collection, getDoc, getDocs, query, serverTimestamp } from 'firebase/firestore';
 function Posts({posts}) {
       const [documents, setDocuments] = useState([]);
@@ -52,6 +52,7 @@ function Posts({posts}) {
       posts.map((post)=>(
            <div key={post.id}>
              <Post
+                  
                   name={post.name}
                   message={post.message}
                   email={post.email}
