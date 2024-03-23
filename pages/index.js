@@ -13,7 +13,7 @@ import { data } from 'autoprefixer';
 const Home = ({ posts }) => {
   const { data: session } = useSession()
   if (!session) return <Login/>;
-  console.log(posts)
+  // console.log(posts)
   
   return (
     <div className="h-screen bg-gray-100 overflow-hidden" >
